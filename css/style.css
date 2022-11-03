@@ -1,0 +1,153 @@
+body{
+	background-color: rgb(136, 178, 255);
+}
+
+.wrapper{
+	max-width: 1300px; 
+	background-color: white;
+	margin: 0 auto; 
+	min-height: 100%;
+	border-radius: 50px; 
+	margin-top: 50px; 
+}
+
+.artical__head{
+	padding: 50px 0px 50px 0px;
+}
+
+.artical__caption{
+	width: 300px;
+	height: 100px;
+	background-color: rgb(250, 101, 101);
+	border-radius: 30px; 
+	padding: 33px 0px 0px 90px;
+	box-shadow: 15px 15px 2px ;
+	margin: 0 auto;
+	transition: all 0.5s ease 0s;
+}
+
+.button{
+	text-transform: uppercase;
+	font-family: "Montserrat";
+	font-weight: 600;
+	font-size: 30px;
+	color: white;
+}
+
+.artical__caption:hover{
+	background-color: purple;
+	box-shadow: 5px 5px 2px ;
+}
+
+.artical__main-text{
+	padding: 0px 0px 50px 50px;
+}
+
+.box__square{
+	width: 300px;
+	height: 300px;
+	background-color: pink;
+	transition: width, height 0.5s, 5s linear  0s;
+}
+
+.box__square:hover{
+	background-color: rgb(2, 2, 121);
+	width: 600px;
+	height: 500px;
+}
+
+.content__context{
+	max-width: 900px; 
+	margin: 0 auto; 
+	padding-bottom: 50px;
+}
+
+.text {
+	font-size: 20px;
+	animation: text 1s ease 0.5s forwards; 
+	transform: translate(0px, 50%);
+	opacity: 0;
+}
+
+@keyframes text{
+	0%{
+	}
+
+	100%{
+	transform: translate(0px, 0%);
+	opacity: 1;
+	}
+}
+
+
+.block__figure{
+	padding: 0 0 20px 155px;
+}
+
+
+.square{
+	width: 150px;
+	height: 150px;
+	background-color: lightgreen;
+	animation: square 5s linear infinite ;
+}
+
+@keyframes square {
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+
+}
+
+
+.square__text{
+	margin-top: 50px; 
+	font-size: 30px;
+	color: red;
+	transition: all 0.5s ease 0s;
+	position: relative;
+	font-weight: 700;
+}
+
+.square__text::after{
+	content: "";
+	position: absolute;
+	width: 0%;
+	height: 5px;
+	bottom: -2px;
+	left: 0;
+	background-color: rgb(0, 107, 174);
+	transition: width 3s ease 1s;
+}
+
+.square__text:hover::after{
+	width: 18%;
+}
+
+.square__text:hover{
+	color: blueviolet;
+}
+
+.title{
+	font-size: 40px;
+	font-weight: 600;
+	padding-left: 455px;
+	line-height: 2;
+	animation: title 1s ease forwards;
+	opacity: 0;
+	transform: translate(0px, 50%);
+}
+
+@keyframes title{
+	0%{
+	}
+
+	100%{
+	transform: translate(0px, 50%);
+	opacity: 1;
+	}
+}
